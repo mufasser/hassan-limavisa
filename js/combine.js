@@ -112,6 +112,10 @@ jQuery(document).ready(function () {
     })
     jQuery(".mobile-menu-close-btn").on('click', function () {
         jQuery(".mobile-menu").hide()
-    })
+    });
+
+    jQuery(".submenu > a" ).on("click",function(){
+      jQuery(this).next('ul').toggle();
+  })
 
 });
