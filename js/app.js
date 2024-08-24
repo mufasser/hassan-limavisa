@@ -35,6 +35,7 @@ jQuery(document).ready(function () {
 
     jQuery(".submenu > a" ).on("click",function(){
         jQuery(this).next('ul').toggle();
+        jQuery(this).parent("li").toggleClass("submenu-active")
     })
 
 
